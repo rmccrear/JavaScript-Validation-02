@@ -10,10 +10,16 @@
 // Name contains an 'i': "will fall in love this week"
 
 let myName;
-myName = "Bob";
+myName = "Trincell";
 // get the length of the name
 let lengthOfName = myName.length;
 // if the name is shorter than 5 give marry early fortune
 if (lengthOfName < 5) {
     console.log("You will marry soon!");
+}
+
+let firstCharacter = myName[0];
+console.log("first letter is " + firstCharacter);
+if(firstCharacter === "T") {
+    console.log("You will be rich!")
 }
