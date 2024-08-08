@@ -10,7 +10,7 @@
 // Name contains an 'i': "will fall in love this week"
 
 let myName;
-myName = "Trincell";
+myName = "Julie";
 // get the length of the name
 let lengthOfName = myName.length;
 // if the name is shorter than 5 give marry early fortune
@@ -20,6 +20,18 @@ if (lengthOfName < 5) {
 
 let firstCharacter = myName[0];
 console.log("first letter is " + firstCharacter);
-if(firstCharacter === "T") {
+if(firstCharacter === "R") {
     console.log("You will be rich!")
+}
+
+// We want to know if the name has an i
+//    if so, they will fall in love immediately.
+// You could store the value of the functions with a variable
+let fallInLoveNow = myName.includes("i");
+if(fallInLoveNow) {
+    console.log("You will meet a mysterious stranger in a cafe before the weekend.");
+}
+// You could call it directly
+if(myName.includes("i")) {
+    console.log("You will meet a mysterious stranger in a cafe before the weekend.");
 }
