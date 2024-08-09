@@ -6,6 +6,10 @@ We will make a function to tell someones' fortune based on their first name.
 
 ## Whiteboards
 
+### Overall plan for solving problem
+
+![Overall plan for solving problem whiteboard](./img/day-3-whiteboard.png)
+
 ### Whiteboard for Day 2
 
 overview of `tellFortune()`
