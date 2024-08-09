@@ -16,10 +16,42 @@
 //     console.log("You will marry late in life");
 // }
 
+// INPUT: String
+// OUTPUT: String
+function sayHello(firstName) {
+    return `Hello ${firstName}, I love ice cream.`;
+}
+
+function favChar(x) {
+    if(x.length > 7) {
+      return `${x} is my favorite video game character.`;
+    }
+    else {
+        return `I hate ${x}`;
+    }
+}
+
+favChar("Princess Peach");
+
+// INPUT: String
+// OUTPUT: Boolean (True/False)
 // function with an argument
 function hasLongName(firstName) {
     let nameLength = firstName.length;
     if(nameLength > 7) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+// We want a function that returns true if the string has an "i"
+// otherwise it returns false.
+// INPUT: firstName <String>
+// OUTPUT: true/false <Boolean>
+function hasAnI(firstName) {
+    let x = firstName.includes("i");
+    if(x) {
         return true;
     } else {
         return false;
@@ -39,6 +71,10 @@ function tellFortune(nameFirst) {
         console.log(`${nameFirst} You will marry late...`)
     } else {
         console.log(`${nameFirst} You will not marry late...`)
+    }
+    let m = hasAnI(nameFirst);
+    if(m) {
+        console.log("You will meet a mysterious stranger before the week is over.");
     }
 }
 
